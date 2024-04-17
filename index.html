@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+    body{ 
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-content: center;
+       background-color: bisque;
+        margin-top: 200px;
+       
+    }
+    img{
+            opacity: 0.4;
+            border-radius: 50%;
+        }
+    .container{
+        width: 400px;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 10px double red;
+        border-radius: 10%;
+    }
+    .ball1{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(15, 20, 17);
+        animation: bounce 1s linear infinite;
+    }
+    .ball2{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(215, 82, 11);
+        animation: bounce 1s linear infinite;
+    }
+    .ball3{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(82, 11, 215);
+        animation: bounce 1s linear infinite;
+    }
+    .ball4{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(215, 62, 11);
+        animation: bounce 1s linear infinite;
+    }
+    .ball2:nth-child(2){
+
+    animation-delay:0.4s;
+}
+.ball3:nth-child(3){
+
+    animation-delay:0.9s;
+}
+.ball4:nth-child(4){
+    
+    animation-delay:0.12s;
+}
+    @keyframes bounce{
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-400%);
+        }
+        100%{
+            transform: translateY(0);
+        }
+       
+    }
+</style>
+</head>
+<body>
+    <marquee scrollamount="0"><img src="https://cdn.dribbble.com/users/1774872/screenshots/5506400/singer3-dr.gif"></marquee>
+    <div class="container">
+    <div class="ball1"></div>
+    <div class="ball2"></div>
+    <div class="ball3"></div> 
+    <div class="ball4"></div>
+    
+
+</div>
+<pre>
+    
+    <audio controls>
+        <source src="./Ordinary Person.mp3" widht="500">
+        
+    </audio>
+
+</pre>
+</body>
+</html>
